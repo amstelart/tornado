@@ -24,46 +24,18 @@
     }
   }
 
-  .field-actions,
-  // .field-file,                // обычно, не участвует в группировке
-  // .field-select,              // обычно, не участвует в группировке
-  .field-text {
-    margin: 0;
-  }
+  &--feedback {
+    @include row;
 
-  .field-actions {
+    .field-text,
+    .field-actions {
+      @include col();
+      @include col(xl, 4);
+      margin: 0 0 15px 0;
 
-    &:not(:last-child) .btn {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:not(:first-child) .btn {
-      border-left: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    .btn {
-
-      // &:hover,
-      &:focus {
-        z-index: 1;           // фокус должен быть красивым
+      .btn {
+        width: 100%;
       }
-    }
-  }
-
-  .field-text {
-
-    &:not(:last-child) .field-text__input {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:not(:first-child) .field-text__input {
-      border-left: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
     }
   }
 

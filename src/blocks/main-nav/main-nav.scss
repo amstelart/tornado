@@ -23,6 +23,10 @@ $transition-time:             0.3s !default;
 
   position: relative;
   z-index: 10;
+  border-top: 1px solid #bfd6da;
+  margin-top: 25px;
+  // background-color: #bfd6da;
+  // background-color: #333333;
 
   // первый уровень
   &__list {
@@ -50,7 +54,8 @@ $transition-time:             0.3s !default;
     // настольный вид списка
     @media (min-width: $menu-desktop-width) {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      font-size: 14px;
 
       &--lvl-2 {
         display: block;
@@ -77,12 +82,17 @@ $transition-time:             0.3s !default;
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background-color: #fff;
+    color: #fff;
+    // background-color: #fff;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      // background-color: $gray-lightest;
+    }
+
+    &:visited {
+      color: #fff;
     }
 
     &--lvl-2 {

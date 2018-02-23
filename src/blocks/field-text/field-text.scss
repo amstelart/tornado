@@ -9,9 +9,6 @@ $text-color--muted:           hsl(0, 0%, 50%) !default;
 
 $line-height:                 1.5 !default;
 
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
-
 $border-radius:               rem(3px) !default;
 
 .field-text {
@@ -70,7 +67,7 @@ $border-radius:               rem(3px) !default;
     }
 
     &::placeholder {
-      color: $text-color--muted;
+      color: $text-color;
       opacity: 1;
     }
 
@@ -85,5 +82,12 @@ $border-radius:               rem(3px) !default;
 
   &__help-text {
     @include field-help-text;
+  }
+
+  &--feedback {
+
+    #{$block-name}__input {
+      border-color: #fff;
+    }
   }
 }

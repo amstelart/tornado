@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока main-box-news, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-box-news {
+
+  $block-name:                &; // #{$block-name}__element
+
+  // @include row;
+  //
+  // .news-card {
+  //   @include col();
+  //   @include col(md, 4);
+  // }
+}

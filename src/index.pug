@@ -9,16 +9,167 @@ block meta
 
 block header
   +page-header()
-    +logo('/')
-      span Логотип
+    +logo('index.html')
+      span Торнадо
+    span.logo-detail
+      strong
+        | Экстрим-клуб
+      | Парапланеризм, горные лыжи и туризм в Курской области
     +main-nav('10')
+    .main-slider.owl-carousel
+      .main-slider__item
+        .main-slider__title Тандемный полет
+        .main-slider__caption
+          .main-slider__caption__part
+            | 18.02.2018
+            br
+            | Место: дорога Шумаково С-Ю старт Северный
+            br
+            | Время выезда: 10-30 Цирк, 10-45 Клуб
+            br
+            a(href="#") Ближайшие полеты
+          .main-slider__caption__part
+            | Полеты тандемные, маршрутные, учебные
+            br
+            | Телефон +7-910-316-7-316, во время полетов +7-910-316-06-06
+      .main-slider__item
+        .main-slider__title Тандемный полет
+        .main-slider__caption
+          .main-slider__caption__part
+            | 18.02.2018
+            br
+            | Место: дорога Шумаково С-Ю старт Северный
+            br
+            | Время выезда: 10-30 Цирк, 10-45 Клуб
+            br
+            a(href="#") Ближайшие полеты
+          .main-slider__caption__part
+            | Полеты тандемные, маршрутные, учебные
+            br
+            | Телефон +7-910-316-7-316, во время полетов +7-910-316-06-06
+      .main-slider__item
+        .main-slider__title Тандемный полет
+        .main-slider__caption
+          .main-slider__caption__part
+            | 18.02.2018
+            br
+            | Место: дорога Шумаково С-Ю старт Северный
+            br
+            | Время выезда: 10-30 Цирк, 10-45 Клуб
+            br
+            a(href="#") Ближайшие полеты
+          .main-slider__caption__part
+            | Полеты тандемные, маршрутные, учебные
+            br
+            | Телефон +7-910-316-7-316, во время полетов +7-910-316-06-06
 
-block content
-  p Содержимое. #[a(href='blocks-demo.html') Библиотека блоков].
-
+block content  
+  .main-box
+    .main-box__inner
+      .main-box__header
+        h2.main-box__title Дальние выезды
+        a.main-box__more(href="#") Все виды
+      .main-box__content
+        .main-box-tour.owl-carousel
+          .tour-card
+            .tour-card__body
+              .tour-card__header
+                .tour-card__title О горнолыжной поездке в Австрию
+                .tour-card__status.tour-card__status--active Активен
+              .tour-card__date 25.03.2018
+              .tour-card__caption
+                p
+                  | <b>В течении летного сезона</b> (с апреля по май) по субботам, воскресеньям и официальным выходным дням (в дни, не занятые выездными полетами, соревнованиями и другими мероприятиями), клуб проводит буксировочные полеты.
+                p
+                  | Принять участия в полетах клуба могут не только пилоты, но и все другие желающие. 
+                a.tour-card__link(href="#") Стоимость буксировочных полетов
+          .tour-card
+            .tour-card__body
+              .tour-card__header
+                .tour-card__title Поездка во Францию
+                .tour-card__status.tour-card__status--active Активен
+              .tour-card__date 25.03.2018
+              .tour-card__caption
+                p
+                  | <b>В течении летного сезона</b> (с апреля по май) по субботам, воскресеньям и официальным выходным дням (в дни, не занятые выездными полетами, соревнованиями и другими мероприятиями), клуб проводит буксировочные полеты.
+                p
+                  | Принять участия в полетах клуба могут не только пилоты, но и все другие желающие. 
+                a.tour-card__link(href="#") Стоимость буксировочных полетов
+          .tour-card
+            .tour-card__body
+              .tour-card__header
+                .tour-card__title Тур в Португалию
+                .tour-card__status Завершен
+              .tour-card__date 25.03.2018
+              .tour-card__caption
+                p
+                  | <b>В течении летного сезона</b> (с апреля по май) по субботам, воскресеньям и официальным выходным дням (в дни, не занятые выездными полетами, соревнованиями и другими мероприятиями), клуб проводит буксировочные полеты.
+                p
+                  | Принять участия в полетах клуба могут не только пилоты, но и все другие желающие. 
+                a.tour-card__link(href="#") Стоимость буксировочных полетов
+  .main-box
+    .main-box__inner
+      .main-box__header
+        h2.main-box__title Новости
+        a.main-box__more(href="#") Все виды
+      .main-box__content.main-box__content--news
+        .main-box-news.owl-carousel
+          .news-card
+            .news-card__image
+              img(src="img/news-card-image.jpg")
+            .news-card__body
+              .news-card__title О горнолыжной поездке в Австрию
+              .news-card__date 25.03.2018
+              .news-card__caption
+                p
+                  | <b>Поездка в Австрию</b> Компания подобралась сборная: наш клуб и пятеро москвичей. Выезд из Курска, Брянска, Москвы 23 февраля в 16, 19 и 22 часа соответственно.
+                p
+                  | Украинско-венгерская таможня нас "порадовала" крайне дотошными таможенниками.
+          .news-card
+            .news-card__image
+              img(src="img/news-card-image.jpg")
+            .news-card__body
+              .news-card__title Новое оборудование
+              .news-card__date 25.03.2018
+              .news-card__caption
+                p
+                  | <b>Поездка в Австрию</b> Компания подобралась сборная: наш клуб и пятеро москвичей. Выезд из Курска, Брянска, Москвы 23 февраля в 16, 19 и 22 часа соответственно.
+                p
+                  | Украинско-венгерская таможня нас "порадовала" крайне дотошными таможенниками.
+          .news-card
+            .news-card__image
+              img(src="img/news-card-image.jpg")
+            .news-card__body
+              .news-card__title Поставка парапланерных аксессуаров со склада и под заказ
+              .news-card__date 25.03.2018
+              .news-card__caption
+                p
+                  | <b>Поездка в Австрию</b> Компания подобралась сборная: наш клуб и пятеро москвичей. Выезд из Курска, Брянска, Москвы 23 февраля в 16, 19 и 22 часа соответственно.
+                p
+                  | Украинско-венгерская таможня нас "порадовала" крайне дотошными таможенниками.
+  .main-box
+    .main-box__inner
+      .main-box__header
+        h2.main-box__title Контакты
+      .main-box__content
+        .main-box-info
+          h3.main-box-info__title Вы можете связаться с нашими инструкторами по следующим телефонным номерам:
+          .main-box-info__col
+            span
+              <b>+7 (910) 274-27-46</b>  —   Ольга Выбывнец
+            span
+              <b>+7 (920) 260-13-33</b>  —   Антон Филлипенко
+            span
+              <b>+7 (910) 316-73-16</b>  —   Виталий Мирошник
+          .main-box-info__col
+            span
+              <b>+7 (910) 274-27-46</b>  —   Наталья Носкова
+            span
+              <b>+7 (920) 260-13-33</b>  —   Александр Леонов
+          .main-box__info__col
+          
 block footer
   +page-footer()
-    p «Подвал»
 
 //- block page-bottom
 //-   script(src="js/some.js")

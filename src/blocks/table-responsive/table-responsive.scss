@@ -17,33 +17,51 @@ $screen-xxl:                  1800px !default;
 
   margin-bottom: 1rem;
   border-collapse: collapse;
-  border: 1px solid $border-color;
   width: 100%;
 
   caption {
     caption-side: top;
     text-align: left;
-    padding: 0.4em $field-padding-horizontal;
-    border: 1px solid $border-color;
+    padding: 0.4em 0 1.7em;
+    font-weight: 500;
     border-bottom: 0;
-    font-size: $font-size--small;
+    font-size: 18px;
+    font-style: italic;
     line-height: 1em;
-    color: $text-color--muted;
+    color: $color-main;
+
+    a {
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 
   td,
   th {
-    padding: $field-padding-vertical $field-padding-horizontal;
+    padding: 0.7em 1.5em;
     vertical-align: top;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #ebebeb;
 
     &:not(:first-child) {
-      border-left: 1px solid $border-color;
+      border-left: 1px solid #ebebeb;
     }
   }
 
   th {
     text-align: left;
+    background: $color-main;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  td {
+    font-weight: 300;
+  }
+
+  .part {
+    background: #f6f6f6;
+    font-weight: 500;
   }
 
   @media (max-width: ($screen-md - 1)) {

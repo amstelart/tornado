@@ -8,8 +8,17 @@
 
   display: inline-block;
   white-space: nowrap;
+  text-decoration: none;
 
   img {
     display: block;
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 42px;
   }
 }

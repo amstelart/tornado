@@ -5,4 +5,10 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding-top: 32px;
+
+  &__inner {
+    @include container;
+  }
 }

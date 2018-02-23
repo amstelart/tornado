@@ -1,0 +1,77 @@
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 70px 0;
+
+  &__title {
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  &__caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+
+    a {
+      color: #ffde00;
+      text-decoration: none;
+    }
+  }
+
+  &__caption__part {
+    margin-bottom: 50px;
+  }
+
+  .owl-nav {}
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+
+  .owl-prev {
+    left: -60px;
+  }
+  .owl-next {
+    right: -60px;
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+  }
+
+  .owl-dot {
+    padding: 3px;
+    margin: 3px;
+    span {
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    &.active {
+      span {
+        background: #ffde00;
+      }
+    }
+  }
+
+}

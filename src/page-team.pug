@@ -1,0 +1,154 @@
+extends pug/layout-page.pug
+
+block meta
+  title Наши лица
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('index.html')
+      span Торнадо
+    span.logo-detail
+      strong
+        | Экстрим-клуб
+    +main-nav('10')
+
+block bread
+  +breadcrumbs()
+    +breadcrumbs-item('Главная', '/index.html')
+    +breadcrumbs-item('Наши лица')
+      
+block content  
+  h1.page-title Наши лица
+  
+  .team-gallery
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item.social__item--vk
+            a(href="#").social__item.social__item--inst
+            a(href="#").social__item.social__item--fa
+            a(href="#").social__item.social__item--tw
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+    .team-card
+      .team-card__image
+        img(src="img/team-photo.jpg")
+      .team-card__body
+        .team-card__header
+          .team-card__name Ольга Выбывнец
+          .team-card__prof мастер спорта
+        .team-card__contacts
+          .team-card__phone +7 (910) 274-27-46 
+          a(href="mailto:tornadoinfo_olga@yandex.ru").team-card__email tornadoinfo_olga@yandex.ru
+        .team-card__social
+          .social
+            a(href="#").social__item
+            a(href="#").social__item
+            a(href="#").social__item
+            
+block footer
+  +page-footer()
+
+//- block page-bottom
+//-   script(src="js/some.js")

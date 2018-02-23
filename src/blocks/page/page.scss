@@ -25,8 +25,43 @@
     flex-direction: column;
   }
 
+  &__top {
+    background-color: rgba(26, 56, 106, 0.4);
+    background-position: center 70%;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+
+  &__breadcrumbs {
+    background: #fff;
+    overflow: hidden;
+  }
+
+  &__breadcrumbs-inner {
+    @include container;
+  }
+
   &__content {
     flex-grow: 1;
+  }
+
+  &__content-inner {
+    @include container;
+    padding-bottom: 6rem;
+  }
+
+  &__product {
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  &__product-inner {
+    @include container;
+  }
+
+  &__map {
+    margin-bottom: 60px;
   }
 
   &__footer-wrapper {
@@ -44,7 +79,7 @@ body {
   // Типографика проекта — в блоке typo
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
-  background-color: #fff;
+  background-color: #f6f6f6;
   margin: 0;
   min-height: 100%;
 }
@@ -146,4 +181,8 @@ a {
 hr {
   box-sizing: content-box; // Проблема Firefox
   overflow: visible;       // Проблема Edge и IE
+}
+
+main {
+  margin-bottom: 60px;
 }

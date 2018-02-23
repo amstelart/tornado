@@ -17,33 +17,40 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
   &__item {
     display: block;
-    padding: 0.5rem;
-    min-width: 2.5rem;
-    border: 1px solid $border-color;
+    padding: 0.2rem;
+    min-width: 2rem;
+    border: 1px solid #b7bcc8;
+    border-radius: 4px;
+    background: #fff;
     text-decoration: none;
     text-align: center;
-    color: $text-color;
+    color: $color-main;
+    font-weight: 500;
 
     & + & {
-      border-left: 0;
+      margin-left: 10px;
     }
 
     &:hover,
     &:focus {
       text-decoration: none;
-      color: $text-color;
+      background-color: $color-main;
+      color: #fff;
     }
 
     @at-root a#{&} {
 
       &:hover,
       &:focus {
-        background-color: $gray-lightest;
+        background-color: $color-main;
+        color: #fff;
       }
     }
 
-    &--active {
-      background-color: $gray-lightest;
+    &.pagination--active {
+      background-color: $color-main;
+      border-color: $color-main;
+      color: #fff;
     }
   }
 }
