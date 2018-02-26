@@ -38,6 +38,9 @@ $transition-time:             0.3s !default;
     @media (max-width: ($menu-desktop-width - 1)) {
 
       // открытие/закрытие меню только в случае работающего JS
+      position: absolute;
+      background: $color-main;
+      width: 100%;
 
       .js & {
         overflow: hidden;
@@ -76,6 +79,10 @@ $transition-time:             0.3s !default;
         color: #000;
       }
     }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
   }
 
   &__link {
@@ -93,6 +100,13 @@ $transition-time:             0.3s !default;
 
     &:visited {
       color: #fff;
+    }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
     }
 
     &--lvl-2 {

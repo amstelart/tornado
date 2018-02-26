@@ -7,8 +7,19 @@
   $block-name:                &; // #{$block-name}__element
 
   padding-top: 32px;
+  padding-bottom: 32px;
 
   &__inner {
     @include container;
+  }
+
+  .burger {
+    position: absolute;
+    right: 15px;
+  }
+
+  @media (max-width: ($menu-desktop-width - 1)) {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

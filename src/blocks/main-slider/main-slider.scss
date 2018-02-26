@@ -39,16 +39,29 @@
   .owl-prev,
   .owl-next {
     position: absolute;
+    width: 35px;
     bottom: 50%;
     transform: translateY(-50%);
     color: #fff;
+
+    svg {
+      stroke: #fff;
+    }
+
+    &:hover,
+    &:focus {
+
+      svg {
+        stroke: #ffde00;
+      }
+    }
   }
 
   .owl-prev {
-    left: -60px;
+    left: -6rem;
   }
   .owl-next {
-    right: -60px;
+    right: -6rem;
   }
 
   .owl-dots {
@@ -74,4 +87,7 @@
     }
   }
 
+  @media (max-width: ($menu-desktop-width - 1)) {
+    padding: 30px 0;
+  }
 }

@@ -7,6 +7,7 @@
   $block-name:                &; // #{$block-name}__element
 
   padding: 65px 0;
+  background-color: rgba(26, 56, 106, 0.4);
   background-position: center center;
   background-size: cover;
 
@@ -69,6 +70,30 @@
         }
       }
     }
+  }
+
+  &--main {
+    background-image: url(../img/page__footer-bg.jpg);
+  }
+
+  &--text {
+    background-image: url(../img/page__footer-bg--text.jpg);
+  }
+
+  &--team {
+    background-image: url(../img/page__footer-bg--team.jpg);
+  }
+
+  &--ivents {
+    background-image: url(../img/page__footer-bg--ivents.jpg);
+  }
+
+  &--contacts {
+    background-image: url(../img/page__footer-bg--contacts.jpg);
+  }
+
+  @media (max-width: ($menu-desktop-width - 1)) {
+    padding: 25px 0;
   }
 
   @media (max-width: ($screen-lg - 1)) {

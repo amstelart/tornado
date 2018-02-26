@@ -62,4 +62,17 @@
     font-weight: 500;
     color: $color-main;
   }
+
+  @media (max-width: $screen-sm ) {
+    &__body {
+      padding: 20px;
+    }
+    &__header {
+      flex-direction: column;
+    }
+    &__title {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
 }
