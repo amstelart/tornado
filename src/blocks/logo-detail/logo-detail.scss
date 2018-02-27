@@ -18,7 +18,6 @@
   }
 
   @media (max-width: ($menu-desktop-width - 1)) {
-    display: block;
-    margin: 0;
+    display: none;
   }
 }
