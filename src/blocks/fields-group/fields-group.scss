@@ -37,6 +37,22 @@
         width: 100%;
       }
     }
+    .field-checkbox {
+      @include col();
+      color: #5c7ead;
+      font-size: 14px;
+
+      .field-checkbox__name {
+        padding-left: 1em;
+      }
+
+      .field-checkbox__name-text:before {
+        top: 3px;
+      }
+      .field-checkbox__name-text:after {
+        top: 3px;
+      }
+    }
   }
 
   // .field-file {               // обычно, не участвует в группировке

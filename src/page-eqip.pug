@@ -1,0 +1,155 @@
+extends pug/layout-page.pug
+
+block meta
+  title Наши лица
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('index.html')
+      span Торнадо
+    span.logo-detail
+      strong
+        | Экстрим-клуб
+    +main-nav('10')
+
+block bread
+  +breadcrumbs()
+    +breadcrumbs-item('Главная', '/index.html')
+    +breadcrumbs-item('Продажа снаряжения')
+      
+block content  
+  h1.page-title Продажа снаряжения
+  
+  .catalog
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+    .c-card
+      .c-card__image
+        img(src="img/c-card-photo.jpg")
+      .c-card__body
+        .c-card__header
+          .c-card__name Параплан
+          .c-card__prof Rook light
+        .c-card__description
+          p Вилка: L
+          p Вилка: 110-130
+          p Цена: 1950
+        .c-card__action
+          button.btn.btn--blue(type='button', data-toggle='modal', data-target='#modal-order') Заказать
+            
+block footer
+  +page-footer('team')
+
+  +modal('modal-order', 'Заказать', 'some')
+    .modal__body
+      p.modal__caption После заказа мы свяжемся с вами для согалсования деталей
+      form.form.form--order
+        label.field-text.field-text--feedback
+          span.field-text__input-wrap
+            input.field-text__input(type='text', value='', name='name', placeholder='Имя')
+        label.field-text.field-text--feedback
+          span.field-text__input-wrap
+            input.field-text__input(type='tel', value='', name='phone', placeholder='Телефон')
+        .field-actions.field-actions--feedback
+          button.btn.btn--blue Отправить заявку
+    .modal__footer
+      .field-checkbox
+        .field-checkbox__input-wrap
+          label.field-checkbox__name
+            input.field-checkbox__input(type='checkbox', checked='checked', name='check0')
+            span.field-checkbox__name-text Я принимаю условия передачи информации
+//- block page-bottom
+//-   script(src="js/some.js")

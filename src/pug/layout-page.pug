@@ -82,7 +82,17 @@ html(class='no-js  page', lang='ru')
                     }
                   })
                   +field-actions('', 'feedback')
-                    button.btn Отправить заявку
+                    button.btn.btn--yellow Отправить заявку
+                  +field-checkbox([
+                    {
+                      title: 'Я принимаю условия передачи информации',
+                      helpText: '',
+                      attrs: {
+                      checked: true,
+                        name: 'check0',
+                      }
+                    },
+                  ])
         
         block product
 

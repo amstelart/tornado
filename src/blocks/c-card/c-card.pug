@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (c-card)
+
+mixin c-card(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +c-card('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' c-card--' + modsList[i].trim();
+      }
+    }
+
+  .c-card(class=allMods)&attributes(attributes)
+    .c-card__inner!= text

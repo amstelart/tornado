@@ -76,7 +76,9 @@
     "card": [],
     "list-inline": [],
     "image-gallery": [],
-    "header-info": []
+    "header-info": [],
+    "catalog": [],
+    "c-card": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
@@ -98,8 +100,7 @@
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/object-fit-images/dist/ofi.js"
   ],
-  "addJsAfter": [
-  ],
+  "addJsAfter": [],
   "addImages": [
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico}"
   ],

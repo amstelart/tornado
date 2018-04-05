@@ -66,23 +66,35 @@ $z-index-modal:               100 !default;
   }
 
   &__header {
-    padding: 0 rem(40px) 0 rem(15px);
+    padding: 1.5em rem(40px) 0 rem(15px);
     flex-shrink: 0;
+    text-align: center;
   }
 
   &__title {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: $font-size--h4;
+    font-size: $font-size--h1;
     line-height: 1.4;
     font-weight: 700;
     color: currentColor;
+  }
+
+  &__caption {
+    text-align: center;
+    margin-bottom: 2em;
+    color: #c6cad8;
   }
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
     top: 5px;
     right: 5px;
+
+    > span:before,
+    > span:after {
+      background: #cccccc;
+    }
   }
 
   &__body {
@@ -91,8 +103,9 @@ $z-index-modal:               100 !default;
   }
 
   &__footer {
-    padding: rem(15px);
+    padding: rem(15px) rem(15px) rem(40px) rem(15px);
     flex-shrink: 0;
+    text-align: center;
   }
 
   &__backdrop {

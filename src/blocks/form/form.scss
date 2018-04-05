@@ -36,4 +36,19 @@ $line-height:                 1.5 !default;
     white-space: normal; // Привет IE
     color: currentColor;
   }
+
+  &--order {
+    max-width: 220px;
+    margin: auto;
+
+    .field-text__input {
+      border-color: #5c7ead;
+      border-radius: 8px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.7em 1.5em;
+    }
+  }
 }

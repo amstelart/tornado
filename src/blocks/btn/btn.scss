@@ -72,6 +72,48 @@ $border-radius:               rem(3px) !default;
   // }
 
 
+  &--blue {
+    color: #fff;
+    background-color: #5c7ead;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #fe0102;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--yellow {
+    color: #44567b;
+    background-color: #ffde00;
+    border-color: #ffde00;
+    border-radius: 6px;
+    // padding: 0.5em 1em;
+
+    &:hover,
+    &:focus {
+      color: #44567b;
+      background-color: darken(#ffde00, 2%);
+      border-color: darken(#ffde00, 4%);
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
 
   // &--main {
   //   color: #fff;
