@@ -186,3 +186,21 @@ hr {
 main {
   margin-bottom: 60px;
 }
+
+.status-label {
+  min-width: 108px;
+  text-align: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 20px;
+  border: 1px solid #44567b;
+  background-color: #ffffff;
+  border-radius: 6px;
+
+  &--active {
+    background-color: #fe0102;
+    border-color: #fe0102;
+    color: #fff;
+  }
+}

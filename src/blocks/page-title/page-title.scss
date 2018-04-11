@@ -11,4 +11,11 @@
   font-size: 30px;
   font-weight: 500;
   font-style: italic;
+
+  &.status {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
