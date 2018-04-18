@@ -38,7 +38,7 @@ $transition-time:             0.3s !default;
     @media (max-width: ($menu-desktop-width - 1)) {
 
       // открытие/закрытие меню только в случае работающего JS
-      position: absolute;
+      // position: absolute;
       background: $color-main;
       width: 100%;
 
@@ -80,8 +80,47 @@ $transition-time:             0.3s !default;
       }
     }
 
-    @media (max-width: ($menu-desktop-width - 1)) {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    // @media (max-width: ($menu-desktop-width - 1)) {
+    //   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    // }
+
+    &--has-child {
+
+      @media (min-width: $menu-desktop-width) {
+        &:hover,
+        &:focus {
+          background: #7ea2d1;
+          transition: background $transition-time;
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transform: rotate(-45deg);
+
+        @media (max-width: ($menu-desktop-width - 1)) {
+          top: 5px;
+
+          &:hover,
+          &:focus {
+            background: #7ea2d1;
+            transition: background $transition-time;
+          }
+        }
+      }
+
+
+      & > #{$block-name}__link  {
+        padding-right: 35px;
+      }
     }
   }
 
@@ -113,7 +152,8 @@ $transition-time:             0.3s !default;
     &--lvl-2 {
 
       @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 1.2em;
+        padding-left: 2em;
+        text-transform: inherit;
       }
     }
 
@@ -129,8 +169,19 @@ $transition-time:             0.3s !default;
 
     &--lvl-2 {
 
+      // #{$block-name}__link  {
+      //   @media (max-width: ($menu-desktop-width - 1)) {
+      //     padding-top: 5px;
+      //     padding-bottom: 5px;
+      //     background: #7ea2d1;
+      //   }
+      // }
+
       @media (min-width: $menu-desktop-width) {
         position: absolute;
+        padding: 10px 0;
+        background: #7ea2d1;
+        min-width: 240px;
         top: 100%;
         left: 0;
         z-index: 1;
