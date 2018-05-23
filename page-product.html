@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i&amp;subset=cyrillic" rel="stylesheet">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Текстовая страница</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if (isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if (typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--' + key;
+            if (typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if (isMobile[key][type]) rootClasses += ' is-mobile--' + key + '-' + type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      } else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <div class="page__top" style="background-image: url(img/page__top-bg.jpg);">
+        <header class="page-header" role="banner">
+          <div class="page-header__inner"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button><a class="logo" href="index.html"><span>Торнадо</span></a><span class="logo-detail"><strong>Экстрим-клуб</strong></span>
+            <div class="header-info"><span class="header-info__phones">+7 (910) 316-73-16, +7 (951) 316-33-17</span></div>
+            <nav class="main-nav" id="nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Тандемные полеты</a></li>
+                <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="/">Свободные полеты</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Обучение</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Продажа снаряжения</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Варианты оплаты</a></li>
+                <li class="main-nav__item  main-nav__item--has-child"><a class="main-nav__link" href="/">Летные места в Курске</a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Карты как проехать</a></li>
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Дороги для малинки</a></li>
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Дороги для пассивки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Дальние поездки</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">О нашем клубе</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="page__breadcrumbs">
+          <div class="page__breadcrumbs-inner">
+            <ul class="breadcrumbs" aria-label="Breadcrumb" role="navigation">
+              <li class="breadcrumbs__item"><a href="/index.html">Главная</a></li>
+              <li class="breadcrumbs__item"><span>Текстовая страница</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page__content-inner">
+        <h1 class="page-title">Параплан Sky Paragliders KOOKY</h1>
+        <main role="main">
+          <div class="content-media">
+            <div class="content-media__slider">
+              <div class="media-slider">
+                <div class="image-carousel owl-carousel">
+                  <div class="item"><img src="http://34.ua/uploads/posts/2013-07/1374145960_03.jpg">
+                    <div class="caption">
+                      <p>Подпись к фотографии</p>
+                    </div>
+                  </div>
+                  <div class="item"><img src="https://avatars.mds.yandex.net/get-pdb/33827/daa3b124-b760-4dba-8143-f8c74439fc5c/s800">
+                    <div class="caption">
+                      <p>Подпись к фотографии</p>
+                    </div>
+                  </div>
+                  <div class="item"><img src="https://avatars.mds.yandex.net/get-pdb/368827/a5df564f-e779-4896-a0b1-ce729ed389f2/s800">
+                    <div class="caption">
+                      <p>Подпись к фотографии</p>
+                    </div>
+                  </div>
+                  <div class="item"><img src="https://ae01.alicdn.com/kf/HTB1Ad9BSXXXXXciXpXXq6xXFXXXF/F-Portable-Nylon-font-b-Parachute-b-font-font-b-Double-b-font-font-b-Hammocks.jpg">
+                    <div class="caption">
+                      <p>Подпись к фотографии</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="image-carousel-thumbs owl-carousel">
+                  <div class="item"><img src="http://34.ua/uploads/posts/2013-07/1374145960_03.jpg"></div>
+                  <div class="item"><img src="https://avatars.mds.yandex.net/get-pdb/33827/daa3b124-b760-4dba-8143-f8c74439fc5c/s800"></div>
+                  <div class="item"><img src="https://avatars.mds.yandex.net/get-pdb/368827/a5df564f-e779-4896-a0b1-ce729ed389f2/s800"></div>
+                  <div class="item"><img src="https://ae01.alicdn.com/kf/HTB1Ad9BSXXXXXciXpXXq6xXFXXXF/F-Portable-Nylon-font-b-Parachute-b-font-font-b-Double-b-font-font-b-Hammocks.jpg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="content-media__text">
+              <p>Параплан KOOKY создан для незабываемых акро-полетов. Комфорт, предсказуемое поведение и простота управления сделают ваши акротрюки простыми и понятными.</p>
+              <p>Разработкой крыла занимался известный дизайнер Хуан Сальвадори, который стал чемпионом Acro Кубка Мира. Поэтому планер является максимально сбалансированным и устойчивым, оставаясь достаточно динамичным и перспективным.</p>
+              <p>Мягкие переходы и постепенная динамика прощают многие ошибки пилота, делая каждый полет максимально безопасным. KOOKY станет лучшим решением при изучении популярных маневров.</p>
+              <h4>Для кого предназначен параплан? </h4>
+              <p>KOOKY идеально подходит промежуточным пилотам, которые желают сделать следующий шаг к освоению игривого фристайла и обучению акроманеврам. При этом его может выбрать и уже опытный акропилот, который просто хочет реализовать свой потенциал в будущем. С таким парапланом вы сможете легко создать захватывающее Acro-шоу. </p>
+            </div>
+          </div>
+          <p>Параплан KOOKY создан для незабываемых акро-полетов. Комфорт, предсказуемое поведение и простота управления сделают ваши акротрюки простыми и понятными.</p>
+          <p>Разработкой крыла занимался известный дизайнер Хуан Сальвадори, который стал чемпионом Acro Кубка Мира. Поэтому планер является максимально сбалансированным и устойчивым, оставаясь достаточно динамичным и перспективным.</p>
+          <p>Мягкие переходы и постепенная динамика прощают многие ошибки пилота, делая каждый полет максимально безопасным. KOOKY станет лучшим решением при изучении популярных маневров.</p>
+          <h4>Для кого предназначен параплан? </h4>
+          <p>KOOKY идеально подходит промежуточным пилотам, которые желают сделать следующий шаг к освоению игривого фристайла и обучению акроманеврам. При этом его может выбрать и уже опытный акропилот, который просто хочет реализовать свой потенциал в будущем. С таким парапланом вы сможете легко создать захватывающее Acro-шоу. </p>
+        </main>
+      </div>
+      <div class="page__product">
+        <div class="page__product-inner">
+          <table class="table-responsive">
+            <thead>
+              <tr>
+                <th>Модель</th>
+                <th>Размер</th>
+                <th>Вилка</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="part" colspan="4">Парапланы</td>
+              </tr>
+              <tr>
+                <td data-label="Модель">Deck</td>
+                <td data-label="Размер">S</td>
+                <td data-label="Вилка">60-85</td>
+                <td data-label="Цена">1 400</td>
+              </tr>
+              <tr>
+                <td data-label="Модель">Deck 2</td>
+                <td data-label="Размер">M</td>
+                <td data-label="Вилка">60-85</td>
+                <td data-label="Цена">1 500</td>
+              </tr>
+              <tr>
+                <td data-label="Модель">Deck 3</td>
+                <td data-label="Размер">M</td>
+                <td data-label="Вилка">60-85</td>
+                <td data-label="Цена">1 500</td>
+              </tr>
+              <tr>
+                <td data-label="Модель">Deck 4</td>
+                <td data-label="Размер">M</td>
+                <td data-label="Вилка">60-85</td>
+                <td data-label="Цена">1 500</td>
+              </tr>
+              <tr>
+                <td data-label="Модель">Deck 5</td>
+                <td data-label="Размер">M</td>
+                <td data-label="Вилка">60-85</td>
+                <td data-label="Цена">1 500</td>
+              </tr>
+              <tr>
+                <td data-label="Модель">Deck 6</td>
+                <td data-label="Размер">M</td>
+                <td data-label="Вилка">60-85</td>
+                <td data-label="Цена">1 500</td>
+              </tr>
+            </tbody>
+            <caption>Продукция 777 (TripleSeven) <a href="#">описания моделей на сайте производителя</a></caption>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer  page-footer--text" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__logo"><a class="logo" href="index.html"><img src="img/logo.svg"/></a></div>
+          <div class="page-footer__info">
+            <div class="page-footer__part">
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Тандемные полеты</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Что это?</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">Правила</a></li>
+                  <li><a href="#">Как проехать</a></li>
+                  <li><a href="#">Подарочный сертификат</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Свободные полеты</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Что это?</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">Правила</a></li>
+                  <li><a href="#">Аренда снаряжения</a></li>
+                  <li><a href="#">Соревнования в Курске</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Обечение</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Чему вы научитесь</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">Правила</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Продажа снаряжения</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Парапланы</a></li>
+                  <li><a href="#">Подвески</a></li>
+                  <li><a href="#">Запаски</a></li>
+                  <li><a href="#">Приборы</a></li>
+                  <li><a href="#">Шлемы</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                  <li><a href="#">Подбор снаряжения по заказу</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Летные места в Курске</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Карты как проехать</a></li>
+                  <li><a href="#">Дороги для малинки</a></li>
+                  <li><a href="#">Дороги для пассивки</a></li>
+                  <li><a href="#">Склоны</a></li>
+                  <li><a href="#">Города</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Дальние поездки</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Парпланерные</a></li>
+                  <li><a href="#">Горнолыжные</a></li>
+                  <li><a href="#">Водные</a></li>
+                  <li><a href="#">Экскурсионные</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">Контакты</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Как проехать в клуб</a></li>
+                  <li><a href="#">Контактные лица</a></li>
+                  <li><a href="#">Обратная связь</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav">
+                <div class="page-footer__nav-title">О нашем клубе</div>
+                <ul class="page-footer__nav-list">
+                  <li><a href="#">Пилоты</a></li>
+                  <li><a href="#">Результаты</a></li>
+                  <li><a href="#">Перапланы</a></li>
+                  <li><a href="#">Автомобили</a></li>
+                  <li><a href="#">Бексировочные системы</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <div class="copyright__inner"><span>Разработка — <a href="http://www.2showbiz.ru/">Showbiz Studio</a></span></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/global-script.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
