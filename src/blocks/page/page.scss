@@ -172,10 +172,6 @@ a {
   &:focus {
     color: $link-color--hover;
   }
-
-  &:visited {
-    color: $link-color--hover;
-  }
 }
 
 hr {
@@ -202,5 +198,98 @@ main {
     background-color: #fe0102;
     border-color: #fe0102;
     color: #fff;
+  }
+}
+
+.content-media {
+  @include row;
+
+  &__slider {
+    @include col();
+    @include col(lg, 5);
+  }
+  &__text {
+    @include col();
+    @include col(lg, 7);
+  }
+}
+
+.media-slider {
+  margin-bottom: 25px;
+}
+
+.image-carousel {
+  .item {
+    margin: 5px;
+  }
+}
+
+.image-carousel-thumbs {
+  .item {
+    margin: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .current .item{
+    background: #0c83e7;
+  }
+}
+
+//arrows on first carousel
+.image-carousel {
+  position: relative;
+
+  .owl-nav {
+
+    [class*='owl-'] {
+      transition: all .3s ease;
+      &.disabled:hover {
+       background-color: #D6D6D6;
+      }
+    }
+  }
+
+  .owl-next, .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+  }
+  .owl-prev {
+    left: 10px;
+  }
+  .owl-next {
+    right: 10px;
+  }
+
+  .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+  }
+  .owl-dot {
+    margin: 5px;
+    span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: block;
+      background: #fff;
+      opacity: 0.5;
+    }
+
+    &.active {
+      span {
+        opacity: 1;
+      }
+    }
   }
 }

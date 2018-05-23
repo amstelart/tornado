@@ -1,0 +1,136 @@
+extends pug/layout-page-2.pug
+
+block meta
+  title Текстовая страница
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('index.html')
+      span Торнадо
+    span.logo-detail
+      strong
+        | Экстрим-клуб
+        
+    .header-info
+      span.header-info__phones +7 (910) 316-73-16, +7 (951) 316-33-17
+      
+    +main-nav('10')
+
+block bread
+  +breadcrumbs()
+    +breadcrumbs-item('Главная', '/index.html')
+    +breadcrumbs-item('Текстовая страница')
+      
+block content  
+  h1.page-title Параплан Sky Paragliders KOOKY
+  
+  main(role="main")
+    .content-media
+      .content-media__slider
+        .media-slider
+          .image-carousel.owl-carousel
+            .item
+              img(src="http://34.ua/uploads/posts/2013-07/1374145960_03.jpg")
+              .caption
+                p Подпись к фотографии
+            .item
+              img(src="https://avatars.mds.yandex.net/get-pdb/33827/daa3b124-b760-4dba-8143-f8c74439fc5c/s800")
+              .caption
+                p Подпись к фотографии
+            .item
+              img(src="https://avatars.mds.yandex.net/get-pdb/368827/a5df564f-e779-4896-a0b1-ce729ed389f2/s800")
+              .caption
+                p Подпись к фотографии
+            .item
+              img(src="https://ae01.alicdn.com/kf/HTB1Ad9BSXXXXXciXpXXq6xXFXXXF/F-Portable-Nylon-font-b-Parachute-b-font-font-b-Double-b-font-font-b-Hammocks.jpg")
+              .caption
+                p Подпись к фотографии
+
+          .image-carousel-thumbs.owl-carousel
+            .item
+              img(src="http://34.ua/uploads/posts/2013-07/1374145960_03.jpg")
+            .item
+              img(src="https://avatars.mds.yandex.net/get-pdb/33827/daa3b124-b760-4dba-8143-f8c74439fc5c/s800")
+            .item
+              img(src="https://avatars.mds.yandex.net/get-pdb/368827/a5df564f-e779-4896-a0b1-ce729ed389f2/s800")
+            .item
+              img(src="https://ae01.alicdn.com/kf/HTB1Ad9BSXXXXXciXpXXq6xXFXXXF/F-Portable-Nylon-font-b-Parachute-b-font-font-b-Double-b-font-font-b-Hammocks.jpg")
+
+      .content-media__text
+        p
+          | Параплан KOOKY создан для незабываемых акро-полетов. Комфорт, предсказуемое поведение и простота управления сделают ваши акротрюки простыми и понятными.
+        p
+          | Разработкой крыла занимался известный дизайнер Хуан Сальвадори, который стал чемпионом Acro Кубка Мира. Поэтому планер является максимально сбалансированным и устойчивым, оставаясь достаточно динамичным и перспективным.
+        p
+          | Мягкие переходы и постепенная динамика прощают многие ошибки пилота, делая каждый полет максимально безопасным. KOOKY станет лучшим решением при изучении популярных маневров.
+        h4
+          | Для кого предназначен параплан? 
+        p
+          | KOOKY идеально подходит промежуточным пилотам, которые желают сделать следующий шаг к освоению игривого фристайла и обучению акроманеврам. При этом его может выбрать и уже опытный акропилот, который просто хочет реализовать свой потенциал в будущем. С таким парапланом вы сможете легко создать захватывающее Acro-шоу. 
+    p
+      | Параплан KOOKY создан для незабываемых акро-полетов. Комфорт, предсказуемое поведение и простота управления сделают ваши акротрюки простыми и понятными.
+    p
+      | Разработкой крыла занимался известный дизайнер Хуан Сальвадори, который стал чемпионом Acro Кубка Мира. Поэтому планер является максимально сбалансированным и устойчивым, оставаясь достаточно динамичным и перспективным.
+    p
+      | Мягкие переходы и постепенная динамика прощают многие ошибки пилота, делая каждый полет максимально безопасным. KOOKY станет лучшим решением при изучении популярных маневров.
+    h4
+      | Для кого предназначен параплан? 
+    p
+      | KOOKY идеально подходит промежуточным пилотам, которые желают сделать следующий шаг к освоению игривого фристайла и обучению акроманеврам. При этом его может выбрать и уже опытный акропилот, который просто хочет реализовать свой потенциал в будущем. С таким парапланом вы сможете легко создать захватывающее Acro-шоу. 
+
+block product
+  .page__product
+    .page__product-inner
+      +table-responsive()
+        thead
+          tr
+            th Модель
+            th Размер
+            th Вилка
+            th Цена
+        tbody
+          tr
+            td(colspan="4", class="part") Парапланы
+          tr
+            td(data-label='Модель') Deck
+            td(data-label='Размер') S
+            td(data-label='Вилка') 60-85
+            td(data-label='Цена') 1 400
+          tr
+            td(data-label='Модель') Deck 2
+            td(data-label='Размер') M
+            td(data-label='Вилка') 60-85
+            td(data-label='Цена') 1 500
+          tr
+            td(data-label='Модель') Deck 3
+            td(data-label='Размер') M
+            td(data-label='Вилка') 60-85
+            td(data-label='Цена') 1 500
+          tr
+            td(data-label='Модель') Deck 4
+            td(data-label='Размер') M
+            td(data-label='Вилка') 60-85
+            td(data-label='Цена') 1 500
+          tr
+            td(data-label='Модель') Deck 5
+            td(data-label='Размер') M
+            td(data-label='Вилка') 60-85
+            td(data-label='Цена') 1 500
+          tr
+            td(data-label='Модель') Deck 6
+            td(data-label='Размер') M
+            td(data-label='Вилка') 60-85
+            td(data-label='Цена') 1 500
+        caption
+          | Продукция 777 (TripleSeven) 
+          a(href="#") описания моделей на сайте производителя
+        
+block footer
+  +page-footer('text')
+
+//- block page-bottom
+//-   script(src="js/some.js")
